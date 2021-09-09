@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Les travaux de Caterina</h1>
+
+<ul>
+  <% @items.each do |item| %>
+    <li><%= item.title %></li>
+    <li><%= item.description %></li>
+    <li><%= item.price %></li>
+  <% end %>
+</ul>
