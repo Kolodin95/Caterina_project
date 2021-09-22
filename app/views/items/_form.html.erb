@@ -1,0 +1,7 @@
+<%= simple_form_for(item) do |f| %>
+  <%= t.input :title %>
+  <%= t.input :description %>
+  <%= t.input :price %>
+  <%= f.input :photo, as: :file %>
+  <!-- [...] -->
+<% end %>
